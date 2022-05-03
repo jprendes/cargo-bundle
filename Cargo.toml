@@ -11,9 +11,11 @@ description = "Bundles the content of a crate into a single rust source file"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "^1.0.52"
 clap = { version = "^3.0.0", features = ["derive"] }
 log = "0.4.16"
 prettyplease = "^0.1.10"
+proc-macro2 = { version = "^1.0.37", features = ["span-locations"] }
+quote = "^1.0.18"
 syn-inline-mod = "0.5"
 syn = "^1.0.0"
-proc-macro2 = { version = "^1.0.37", features = ["span-locations"] }
